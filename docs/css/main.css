@@ -83,6 +83,8 @@ main {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    margin-top: 13rem;
+    margin-bottom: 7.2rem;
   }
 }
 
@@ -134,7 +136,7 @@ main {
 }
 
 .reviews {
-  height: 26.6rem;
+  max-height: 26.6rem;
   max-width: 32.7rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -164,8 +166,6 @@ main {
 
 @media screen and (min-width: 1110px) {
   .reviews {
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
     max-width: 44.5rem;
     margin-bottom: 0;
   }
@@ -193,6 +193,10 @@ main {
         -ms-flex-align: center;
             align-items: center;
   }
+}
+
+.reviews > div:not(:last-of-type) {
+  margin-bottom: 1.6rem;
 }
 
 @media screen and (min-width: 1110px) {
@@ -261,6 +265,7 @@ main {
         justify-content: space-around;
     max-width: 111rem;
     width: 100%;
+    margin-bottom: 11rem;
   }
 }
 
